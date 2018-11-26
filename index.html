@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <style>
+        body {
+            background-color: #3f51b5;
+            color: white;
+            font-family: Helvetica,
+        }
+    </style>
+    <title>Calcualando tu peso</title>
+</head>
+
+<body>
+    <h1>Bienvenido</h1>
+    <h2> En esta página podremos calcular tu peso en diferentes planetas</h2>
+    <p>Tu peso es: </p>
+    <script>
+        var gTierra = 9.8;
+        var gMarte = 3.7;
+        var gJupiter = 24.8;
+        var tuPeso;
+
+        tuPeso = prompt("Por favor, Ingresa tu peso!");
+        var resultMarte = ((tuPeso * gMarte) / gTierra);
+        document.write("Tu peso en Marte es: " + resultMarte.toFixed(2) + "<br>");
+        var resultJupiter = ((tuPeso * gJupiter) / gTierra);
+        document.write("Tu peso en Jupiter es: " + resultJupiter.toFixed(2) + "<br>" + "<br>");
+        document.write("*************************************************");
+    </script>
+</body>
+
+</html>
